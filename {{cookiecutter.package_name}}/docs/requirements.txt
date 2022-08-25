@@ -1,0 +1,2 @@
+sphinx
+{{cookiecutter.package_name}}
