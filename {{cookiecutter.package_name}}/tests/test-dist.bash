@@ -19,7 +19,7 @@ echo "Removing any old artefacts"
 rm -rf test_venv
 
 echo "Creating test virtual environment"
-python -m venv test_venv
+python3 -m venv test_venv
 
 echo "Entering test virtual environment"
 source test_venv/bin/activate
@@ -32,7 +32,7 @@ pip install $RELEASE_ARCHIVE
 
 echo "Running tests"
 cd ../tests
-python -m unittest discover -s .
+python3 -m unittest discover -s .
 
 echo "Exiting test virtual environment"
 deactivate
