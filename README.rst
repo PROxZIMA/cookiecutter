@@ -99,7 +99,7 @@ is a shortened form for Github):
 
 .. code-block:: console
 
-    (cc) $ cookiecutter gh:claws/cookiecutter-python-project
+    (cc) $ cookiecutter gh:PROxZIMA/cookiecutter
 
 Alternatively, if you have cloned a local copy of this template you can
 reference it directly:
@@ -118,7 +118,6 @@ cookiecutter virtual environment as it is no longer required.
 .. code-block:: console
 
     (cc) $ deactivate
-    $
 
 
 Manual Modifications
