@@ -1,6 +1,6 @@
 # This makefile has been created to help developers perform common actions.
 # Most actions assume it is operating in a virtual environment where the
-# python command links to the appropriate virtual environment Python.
+# python3 command links to the appropriate virtual environment Python.
 
 MAKEFLAGS += --no-print-directory
 
@@ -39,13 +39,13 @@ scrub:
 # help: test                           - run tests
 .PHONY: test
 test:
-	@python -m unittest discover -s tests
+	@python3 -m unittest discover -s tests
 
 
 # help: test-verbose                   - run tests [verbosely]
 .PHONY: test-verbose
 test-verbose:
-	@python -m unittest discover -s tests -v
+	@python3 -m unittest discover -s tests -v
 
 
 # help: coverage                       - perform test coverage checks
@@ -124,13 +124,13 @@ check-docs:
 # help: serve-docs                     - serve project html documentation
 .PHONY: serve-docs
 serve-docs:
-	@cd docs/build; python -m http.server --bind 127.0.0.1
+	@cd docs/build; python3 -m http.server --bind 127.0.0.1
 
 
 # help: dist                           - create a wheel distribution package
 .PHONY: dist
 dist:
-	@python setup.py bdist_wheel
+	@python3 setup.py bdist_wheel
 
 
 # help: dist-test                      - test a whell distribution package
