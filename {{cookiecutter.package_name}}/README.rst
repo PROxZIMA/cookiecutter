@@ -1,6 +1,10 @@
 {{cookiecutter.package_display_name}}
 {{cookiecutter.package_display_name|length * '#' }}
 
+.. image:: https://github.com/{{cookiecutter.github_user_name}}/{{cookiecutter.github_repo_name}}/actions/workflows/ci.yml/badge.svg
+   :target: https://github.com/{{cookiecutter.github_user_name}}/{{cookiecutter.github_repo_name}}/
+   :alt: Build Status
+
 {{cookiecutter.package_short_description}}
 
 
